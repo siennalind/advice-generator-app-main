@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --gray-blue: hsl(217, 19%, 38%);
+    --dark-gray-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    background-color: var(--dark-blue);
+}
+
+/* Card Styles */
+main {
+    background-color: var(--dark-gray-blue);
+    border-radius: 12px;
+    width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* Dice Styles */
+.dice-background {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+
+/* Text Styles */
+.advice-id {
+    color: var(--neon-green);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+
+.advice-text {
+    color: var(--light-cyan);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin: 1.5rem 1rem;
+}
+
+/* Attribution Styles */
+.attribution {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75rem;
+    color: var(--light-cyan);
+    text-align: center;
+    opacity: 0.8;
+    letter-spacing: 0.05em;
+}
+
+.attribution a {
+    color: var(--neon-green);
+}
