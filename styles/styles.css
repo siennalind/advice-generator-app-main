@@ -5,6 +5,7 @@
 :root {
     --light-cyan: hsl(193, 38%, 86%);
     --neon-green: hsl(150, 100%, 66%);
+    --glow: hsla(150, 100%, 66%, 0.75);
     --gray-blue: hsl(217, 19%, 38%);
     --dark-gray-blue: hsl(217, 19%, 24%);
     --dark-blue: hsl(218, 23%, 16%);
@@ -12,6 +13,13 @@
 
 body {
     background-color: var(--dark-blue);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
 }
 
 /* Card Styles */
@@ -19,7 +27,7 @@ main {
     background-color: var(--dark-gray-blue);
     border-radius: 12px;
     width: 90%;
-    margin: 3rem auto;
+    max-width: 550px;
     text-align: center;
     padding-top: 2rem;
 }
@@ -53,7 +61,8 @@ main {
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
-    margin: 1.5rem 1rem;
+    margin: 1.5rem 2rem;
+    line-height: 1.5;
 }
 
 /* Attribution Styles */
@@ -68,4 +77,11 @@ main {
 
 .attribution a {
     color: var(--neon-green);
+}
+
+/* Button Styling */
+.dice-background:hover,
+.dice-background:active,
+.dice-background:focus {
+    box-shadow: 0 0 20px 5px var(--glow);
 }
