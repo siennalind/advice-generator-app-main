@@ -16,3 +16,4 @@ const getNewQuote = () => {
 }
 
 randomAdviceButton.addEventListener("click", getQuote)
+window.addEventListener('load', getQuote)

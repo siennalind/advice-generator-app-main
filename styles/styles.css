@@ -79,9 +79,12 @@ main {
     color: var(--neon-green);
 }
 
+.attribution a:hover {
+    color: var(--light-cyan);
+}
+
 /* Button Styling */
 .dice-background:hover,
-.dice-background:active,
-.dice-background:focus {
+.dice-background:active {
     box-shadow: 0 0 20px 5px var(--glow);
 }
